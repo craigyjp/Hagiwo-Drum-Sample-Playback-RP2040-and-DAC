@@ -6,6 +6,8 @@ https://note.com/solder_state/n/n950ed088c3cb
 
 Converted to RP2040 as the ESP32-C3 does not work well with i2s DACs
 
+Using the YD-RP2040 16Mb version it should be possible to increase the amount of drum samples to nearly 200 or increase the sample length for longer samples and reduce the amount around 100 samples per drum.
+
 Reads MIDI CC messages and program changes on channel 1 for control over the sample number, tuning and filter.
 
 * CC 08 controls the tuning of the drum in 128 steps.
