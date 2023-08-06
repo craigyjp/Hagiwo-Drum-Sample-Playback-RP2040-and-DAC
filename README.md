@@ -4,7 +4,7 @@ Modified version of the Hagiwo $8 Drum Sample playback module.
 
 https://note.com/solder_state/n/n950ed088c3cb
 
-Converted to RP2040 as the ESP32-C3 does not work well with i2s DACs
+I found the 10 bit sample playback and the sample.h format difficult to understand, so I rewrote the code to use a 16 bit DAC, but the ESP32-C3 does not talk to i2s DACs very well so I ported the code to RP2040, in particular the YD-RP2040 to take advantage of the large memory capacity and low cost.
 
 Using the YD-RP2040 16Mb version it should be possible to increase the amount of drum samples to nearly 200 or increase the sample length for longer samples and reduce the amount around 100 samples per drum.
 
